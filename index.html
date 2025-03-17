@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./jsAssignment23.css">
+  <title>JS_Assignment023</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="gamePanel show">
+
+      <div class="playBtn">
+        <div class="play" onclick="getStart(this)">
+        </div>
+      </div>
+      <div class="gameOn hide">
+
+        <div class="display">
+          <div class="player _1 turn">
+            <div class="scorePlayer _1">
+              <p>
+                0
+              </p>
+              <!-- <p>
+              Player Score
+
+              </p> -->
+            </div>
+
+          </div>
+          <div class="isWin hide">
+            <img src="./images/clash.gif" alt="">
+          </div>
+          <div class="player _2">
+            <div class="scorePlayer _2">
+              <p>
+                0
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <ul>
+          <li onclick="userSelect(this)" style="--imgChar: url(./images/scissors.gif)" class="imgChar scissors"></li>
+          <li onclick="userSelect(this)" style="--imgChar: url(./images/paper.gif)" class="imgChar paper"></li>
+          <li onclick="userSelect(this)" style="--imgChar: url(./images/rock.gif)" class="imgChar rock"></li>
+          <li onclick="userSelect(this)" style="--imgChar: url(./images/lizard.gif)" class="imgChar lizard"></li>
+          <li onclick="userSelect(this)" style="--imgChar: url(./images/spock.gif)" class="imgChar spock"></li>
+        </ul>
+      </div>
+
+      <!-- <div class="userWinOrLose .userWin">
+        User Win
+      </div> -->
+    </div>
+  </div>
+  <script src="JS_Assignment023.js"></script>
+</body>
+
+</html>
